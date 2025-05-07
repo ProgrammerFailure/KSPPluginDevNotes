@@ -19,6 +19,10 @@ Desired value: ExemplarNode.testVar
 Code to get it.
 
 ```
+	ConfigNode ExemplarNode = GameDatabase.Instance.GetNode("GameDatabaseTest/Settings/test/ExemplarNode");
+	int testVar = int.Parse(ExemplarNode.GetValue("testVar"));
+```
+=======
 	ConfigNode ExemplarNode = GameDatabaseTest/Settings/test/ExemplarNode;
 	int testVar = int.Parse(ExemplarNode.GetValue("testVar"));
 ```
